@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pomodoro Timer</h1>
+        <div class="clock">
+            <button type="submit" id="up">
+                <i class="fas fa-caret-up"></i>
+            </button>
+            <div>
+                <input type="number" name="minute" id="minute" class="t_elapsed" max="2" size="2" placeholder="00" required>
+                <span>:</span>
+                <input type="number" name="second" id="second" class="t_elapsed" max="2" placeholder="00" value="0" readonly>
+            </div>
+            <button type="submit" id="down">
+                <i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+        <p>Set interval time above and focus as long as the clock is running!</p>
+        <div class="controls">
+            <button type="" id="start">Start</button>
+            <button type="" id="stop">Stop</button>
+            <button type="" id="reset">Reset</button>
+        </div>
+        <div class="table">
+            <form action="" method="post"></form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

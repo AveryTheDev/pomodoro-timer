@@ -1,0 +1,147 @@
+html,body {
+    margin: 0;
+    padding: 0; 
+    background-color: rgb(43, 56, 94);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+
+.title {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    margin: .25em 0 0 0;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: thin;
+}
+
+.clock {
+    margin: 4em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    height: 25em;
+    width: 25em;
+    border: 20px solid rgb(6, 110, 79);
+    background-color: rgba(201, 67, 26, 0.493);
+}
+
+.clock > button {
+    display: inline-block;
+    border: none;
+    background: none;
+    margin: 0 auto;
+}
+
+.clock > button:first-child:active {
+    transform: translateY(-4px);
+}
+
+.clock > button:active {
+    transform: translateY(4px);
+}
+
+i {
+    color: white;
+    font-size: 2em;
+}
+
+.t_elapsed {
+    font-size: 5em;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    width: 100px;
+    margin: 45px 10px;
+    background: none;
+    color: white;
+}
+
+.t_elapsed::placeholder {
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+span {
+    color: white;
+    font-size: 5em;
+    margin: 4px;
+}
+
+.container>p {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 1em 2em 1em;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5em;
+}
+
+.controls > button {
+    border-radius: 20px;
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+    margin: auto 1em;
+    padding: .25em 1em;
+    background-color: white;
+    border: none;
+    box-shadow: 0 9px rgb(119, 112, 112);
+}
+
+#start:hover {
+    background-color: rgb(61, 133, 61);
+    color: white;
+    
+}
+
+#start:active {
+   background-color: rgb(61, 133, 61);
+   color: white;
+   box-shadow: 0 5px rgb(119, 112, 112);
+   transform: translateY(4px);
+}
+
+#stop:hover {
+    background-color: rgb(172, 40, 40);
+    color: white;
+}
+
+#stop:active {
+    background-color: rgb(172, 40, 40);
+    color: white;
+    box-shadow: 0 5px rgb(119, 112, 112);
+    transform: translateY(4px);
+}
+
+#reset:hover {
+    background-color: rgb(36, 34, 34);
+    color: white;
+}
+
+#reset:active {
+    background-color: rgb(36, 34, 34);
+    color: white;
+    box-shadow: 0 5px rgb(119, 112, 112);
+    transform: translateY(4px);
+}
